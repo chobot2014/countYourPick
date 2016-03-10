@@ -1,0 +1,22 @@
+when you do this whole business in your flat file reader you put every different product into the product list... if you want the product list to have like a quantity, you have to change how your product list is made 
+
+
+for example. if you have let's say an invoice that has 3 products of type a and 2 products of type b, your invoice list would be like this
+
+
+productList.get(0).getProductType() = a
+productList.get(1).getProductType() = a
+productList.get(2).getProductType() = a
+productList.get(3).getProductType() = b
+productList.get(4).getProductType() = b
+
+
+this is fine, but what you're trying to do is go into each different product in the list and see how many
+of the same type you have... it doesn't make any sense whatsoever
+
+2 options... 
+1) redo your flat filereader for invoices and products (products) class so that there is a "quantity" variable based on the number of products per invoice,
+ 
+2) you keep your current code, and do something in your invoice class that figures out how many of each type there is in the Products list. probably would reccomdent this one do it in a method in your invoice class. pretty much you would pass it the products list and it would figure out all of the different product types you had and how many of each. then use that to calculate current and complete cost. 
+
+//notes... This is your relationship, and I realize that I don't really know how shit goes for you guys, but it's pretty dumb that she's waiting till now to get it done, and then makes you do it because she can't. anywhoo, that's my two cents. glhf.
