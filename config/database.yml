@@ -1,15 +1,15 @@
 development:
   adapter: postgresql
-  encoding: unicode
+  encoding: SQL_ASCII
   database: postgres
   pool: 5
-  username: john
-  password:
+  username: ubuntu
+  password: password
 
 test:
   adapter: postgresql
-  encoding: unicode
+  encoding: SQL_ASCII
   database: postgres
   pool: 5
-  username: john
-  password:
+  username: ubuntu
+  password: password
