@@ -3,13 +3,13 @@ development:
   encoding: SQL_ASCII
   database: postgres
   pool: 5
-  username: ubuntu
-  password: password
+  username: john
+  password:
 
 test:
   adapter: postgresql
   encoding: SQL_ASCII
   database: postgres
   pool: 5
-  username: ubuntu
-  password: password
+  username: john
+  password: 
