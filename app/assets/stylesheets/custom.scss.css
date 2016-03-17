@@ -1,0 +1,13 @@
+@import "bootstrap";
+/*this lets me have a background under all of the elements*/
+body{ 
+  background: url(background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.container{
+	background-color: rgba(255,255,255, 0.6);
+	border-radius: 25px;
+}
