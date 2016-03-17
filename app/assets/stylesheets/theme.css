@@ -14,8 +14,11 @@ html {
 }
 body {
   margin: 0;
-  background-image: url("background.jpg");
-
+ background: url(background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 article,
 aside,
@@ -1579,6 +1582,8 @@ pre code {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  background-color: rgba(255,255,255, 0.6);
+  border-radius: 25px;
 }
 @media (min-width: 768px) {
   .container {
